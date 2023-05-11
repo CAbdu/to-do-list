@@ -1,0 +1,53 @@
+.titre a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.enterTask {
+  border-style: solid;
+  border-color: #00235b;
+  border-radius: 3px;
+}
+
+.addTask {
+  margin-left: 20%;
+}
+
+.tasks {
+  margin-left: 12%;
+  list-style-type: disc;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  color: #fdf8f8;
+  font-size: 70%;
+  font-family: 'Delicious Handrawn', cursive;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+}
+
+.add-task-button {
+  margin-left: 80px;
+  background-color: #00235b;
+}
+
+.delete-task-button {
+  background-color: #e21818;
+  margin-left: 25px;
+}
+
+img.time-task {
+  width: 20px;
+  height: 20px;
+  margin-left: 50px;
+  opacity: 50%;
+}
