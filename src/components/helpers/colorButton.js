@@ -1,7 +1,5 @@
 import React from "react";  
 import colorWheel from "../images/colorWheel.png"; 
-import Modal from "../Modal/Modal";
-import '../css/modal.css';
 import "../css/home.css";
 
 

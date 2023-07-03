@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../components/css/home.css';
-import '../components/css/modal.css';
-import time from '../components/images/time.png'
-import Modal from '../components/Modal/Modal'
 import ColorButton from '../components/helpers/colorButton';
+import time from '../components/images/time.png'
+import '../components/helpers/togglePopUp';
+import PopUp from '../components/helpers/togglePopUp';
 
 function ToDoList() {
   const [newTask, setNewTask] = useState('');
@@ -24,16 +24,13 @@ function ToDoList() {
     const updatedList = [...toDoList];
     updatedList.splice(index, 1);
     setToDoList(updatedList);
-  }
+  };
 
-  // const handleClick = () => {
-  //   console.log('okok');
-  // };
+ 
+  const [showPopUp, setShowPopUp] = useState(false);
 
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
+  const togglePopUp = () => {
+    setShowPopUp(!showPopUp);
   };
 
   const handleKeyDown = (event) => {
@@ -42,6 +39,7 @@ function ToDoList() {
     }
   };
 
+  console.log(togglePopUp);
   
   return (
     <div>
@@ -69,10 +67,10 @@ function ToDoList() {
         
               <ColorButton
                 imageAlt="Color Wheel"
-                onClick={toggleModal} 
+                onClick={togglePopUp} 
                
               />
-               {modal && (<Modal/>)}
+               {PopUp}
               
 
 

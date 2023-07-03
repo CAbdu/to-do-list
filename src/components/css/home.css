@@ -27,8 +27,6 @@ ul {
 }
 
 button {
-  color: #fdf8f8;
-  font-size: 70%;
   font-family: 'Delicious Handrawn', cursive;
   border-radius: 5px;
   box-shadow: 1px 1px 1px black;
@@ -36,11 +34,15 @@ button {
 }
 
 .add-task-button {
+  color: #fdf8f8;
+  font-size: 70%;
   margin-left: 80px;
   background-color: #00235b;
 }
 
 .delete-task-button {
+  color: #fdf8f8;
+  font-size: 70%;
   background-color: #e21818;
   margin-left: 25px;
 }
