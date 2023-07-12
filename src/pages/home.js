@@ -68,9 +68,10 @@ function ToDoList() {
               <ColorButton
                 imageAlt="Color Wheel"
                 onClick={togglePopUp} 
+  
                
               />
-               {PopUp}
+               {togglePopUp}
               
 
 
